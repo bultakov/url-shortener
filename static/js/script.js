@@ -63,7 +63,7 @@ const shorten = (input) => {
         .then(response => response.json())
         .then((json) => {
             console.log(json)
-            shortUrl.innerHTML = document.location.host + '/' + json.shortener;
+            shortUrl.innerHTML = 'https://' + document.location.host + '/' + json.shortener;
             QRCode.style.visibility = 'visible'
             QRCode.src = json.image
             showResult();
