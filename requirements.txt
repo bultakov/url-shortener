@@ -6,3 +6,4 @@ djangorestframework
 markdown 
 django-filter
 qrcode
+drf-yasg[validation]
