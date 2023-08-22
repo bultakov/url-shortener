@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect
+from django.http import HttpResponse
 
 from .models import Shortener
 
@@ -8,7 +9,10 @@ def home(request):
 
 
 def shortener(request, shorten: str):
-    url = Shortener.objects.filter(shortener=shorten).first()
-    url.click_count += 1
-    url.save()
-    return redirect(url.url)
+    try:
+        url = Shortener.objects.filter(shortener=shorten).first()
+        url.click_count += 1
+        url.save()
+        return redirect(url.url)
+    except:
+        return HttpResponse("<h1>404</h1>")

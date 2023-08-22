@@ -23,6 +23,8 @@ python manage.py runserver
 
 **🔗 Manzil**: https://urlshorteneruz.pythonanywhere.com/
 
+**📄 API Docs**: https://urlshorteneruz.pythonanywhere.com/api/docs/
+
 **💻 Dasturchi**: https://t.me/biiuz
 
 **🍭 Template**: https://codepen.io/annecburke/pen/OJWYLMW
