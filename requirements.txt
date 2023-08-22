@@ -1,0 +1,8 @@
+Django
+psycopg2
+Pillow
+python-dotenv
+djangorestframework 
+markdown 
+django-filter
+qrcode
